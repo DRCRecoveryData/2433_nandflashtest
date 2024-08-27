@@ -1,20 +1,29 @@
-#define D0 P1_0
-#define D1 P1_1
-#define D2 P1_2
-#define D3 P1_3
-#define D4 P2_7
-#define D5 P1_5
-#define D6 P1_6
-#define D7 P1_7
+// Pin definitions for Arduino Leonardo
+#define D0 2  // Pin 2 corresponds to P1_0 on MSP430
+#define D1 3  // Pin 3 corresponds to P1_1 on MSP430
+#define D2 4  // Pin 4 corresponds to P1_2 on MSP430
+#define D3 5  // Pin 5 corresponds to P1_3 on MSP430
+#define D4 6  // Pin 6 corresponds to P2_7 on MSP430
+#define D5 7  // Pin 7 corresponds to P1_5 on MSP430
+#define D6 8  // Pin 8 corresponds to P1_6 on MSP430
+#define D7 9  // Pin 9 corresponds to P1_7 on MSP430
 
-#define NCE1 P2_0
-#define NCE2 P2_1
-#define CLE P3_1
-#define ALE P2_5
-#define NRE P2_6
-#define NWE P3_2
-#define NWP P2_2
-#define RNB P2_4
+#define NCE1 10  // Pin 10 corresponds to P2_0 on MSP430
+#define NCE2 11  // Pin 11 corresponds to P2_1 on MSP430
+#define CLE 12  // Pin 12 corresponds to P3_1 on MSP430
+#define ALE 13  // Pin 13 corresponds to P2_5 on MSP430
+#define NRE A0  // Analog pin A0 corresponds to P2_6 on MSP430
+#define NWE A1  // Analog pin A1 corresponds to P3_2 on MSP430
+#define NWP A2  // Analog pin A2 corresponds to P2_2 on MSP430
+#define RNB A3  // Analog pin A3 corresponds to P2_4 on MSP430
+
+// NAND Flash Commands
+#define NAND_CMD_PAGE_READ (0x00)
+#define NAND_CMD_READ_CONFIRM (0x30)
+#define NAND_CMD_READ_STATUS_REGISTER (0x70)
+#define NAND_CMD_READ_ID (0x90)
+#define NAND_CMD_READ_PARAMETER_PAGE (0xEC)
+#define NAND_CMD_RESET (0xFF)
 
 #define NAND_CMD_PAGE_READ (0x00)
 #define NAND_CMD_READ_CONFIRM (0x30)
